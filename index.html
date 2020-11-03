@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<!-- code by webdevtrick ( https://webdevtrick.com ) -->
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="footer, address, phone, icons" />
+
+	<title>TheUselessButton</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="style.css">
+    <style>
+            body {
+                /*background-image: url("water.jpg"); */
+                background-color: black;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            a:link {
+                color: red;
+            }
+            a:visited {
+                color: green;
+            }
+            a:hover {
+                color: hotpink;
+            }
+            a:active {
+                color: blue;
+            }
+            .red {
+                color: white;
+            }
+            .msgach {
+                width: 300px;
+                border: solid red 2px; 
+                background:rgba(255,255,255,0.5);
+            }
+            .scrollbox {
+                height: 100px;
+                width: 330px;
+                border: 1px solid #4e4e4e; 
+                overflow: auto;
+                
+            }
+            .center-main {
+                text-align: center;
+                display: table;
+                margin: 0 auto;
+                width: 100px;
+	            height: 100px;
+	            position: absolute;
+	            top:0;
+	            bottom: 0;
+	            left: 0;
+	            right: 0;
+	            margin: auto;
+            }
+            .button {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        </style>
+        <script>
+
+        </script>
+    </head>
+
+	<body>
+	    <p class="red" >Version 1.0 (Kinda crap but basic stuff works)<a href="/auth.php?action=login"><span style="color: black;">qqqq</span></a> </p>
+	<!-- 	<div class="main"> -->
+	        <div class="center-main">
+                <input type="button" value="Count" id="countButton" class="button"/> 
+                <p class="red">The button was pressed <span id="displayCount">0</span> times.</p>
+            
+            
+		        <div class="scrollbox">
+		            <div class="red">   
+	                    <div id="clicktwintyfive" class="msgach">
+                            <p> You clicked the button 25 times! </p>
+                            <p>You have reached the end for now :( want to add to the site? click here</p>
+                        </div>
+            
+                        <div id="clickten" class="msgach">
+                            <p> You clicked the button 10 times! </p>
+                        </div>
+            
+                        <div id="clickfive" class="msgach">
+                            <p> You clicked the button 5 times! </p>
+                        </div>
+            
+                        <div id="clickone" class="msgach">
+                            <p> You clicked the button once! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+        
+        
+        
+	    <script type="text/javascript">
+      var count = 0;
+      var button = document.getElementById("countButton");
+      var display = document.getElementById("displayCount");
+
+
+      var cclickone = document.getElementById("clickone");
+      var cclickfive = document.getElementById("clickfive");
+      var cclickten = document.getElementById("clickten");
+      var cclicktwintyfive = document.getElementById("clicktwintyfive");
+
+      cclickone.style.display = "none";
+      cclickfive.style.display = "none";
+      cclickten.style.display = "none";
+      cclicktwintyfive.style.display = "none";
+
+      button.onclick = function(){
+        count++;
+        display.innerHTML = count;
+        if (count >= 1)
+        {
+                cclickone.style.display = "block";
+        }
+        else
+        {
+                cclickone.style.display = "none";
+        }
+        if (count >= 5)
+        {
+                cclickfive.style.display = "block";
+        }
+        else
+        {
+                cclickfive.style.display = "none";
+        }
+        if (count >= 10)
+        {
+                cclickten.style.display = "block";
+        }
+        else
+        {
+                cclickten.style.display = "none";
+        }
+        if (count >= 25)
+        {
+                cclicktwintyfive.style.display = "block";
+        }
+        else
+        {
+                cclicktwintyfive.style.display = "none";
+        }
+        
+        
+      }
+</script>
+	<!--	</div> -->
+		
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>TheUselessButton</h3>
+
+				<p class="footer-company-name"><a href="https://vaatitheminish.com" target="_blank">VaatiTheMinish</a> &copy; 2020</p>
+			</div>
+
+			<div class="footer-center">
+			</div>
+
+			<div class="footer-right">
+				<div class="footer-icons">
+                    <a href="https://twitter/com/VaatiTheMinish" target="_blank"><img src="https://vaatitheminish.com/data/img/twitterlogo.png" width="60%"></a>
+                    <a href="https://youtube.com/Vaati" target="_blank"><img src="https://vaatitheminish.com/data/img/youtubelogo.png" width="60%"></a>
+                    <a href="https://twitch.tv/VaatiTheMinish123" target="_blank"><img src="https://vaatitheminish.com/data/img/twitchlogo.png" width="60%"></a>
+                    <a href="https://discord.gg/BqkFAvh" target="_blank"><img src="https://vaatitheminish.com/data/img/discordlogo.png" width="60%"></a>
+                    <a href="mailto:contact@vaati.net" target="_blank"><img src="https://vaati.net/stream/locked/email.png" width="60%"></a>
+                    <a href="https://trovo.live/vaatitheminish" target="_blank"><img src="https://static.trovo.live/cat/favicon.ico" width="60%"></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+	</body>
+
+</html>
