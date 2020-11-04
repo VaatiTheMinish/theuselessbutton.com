@@ -8,10 +8,11 @@
 		<meta name="keywords" content="footer, address, phone, icons" />
 
 		<title>TheUselessButton</title>
+		<link rel="shortcut icon" href="https://vaati.net/api/icon/Vaati.png">
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://theuselessbutton.com/style.css">
 
 		<style>
 			body {
@@ -76,7 +77,6 @@
     </head>
 
 	<body>
-	    <p class="red" >Version 1.1 (Changed to using switch statements) </p>
 			<!--<div class="main"> -->
 			<div class="center-main">
 				<input type="button" value="Count" id="countButton" class="button"/> 
@@ -84,10 +84,18 @@
             
             
 		        <div class="scrollbox">
-		            <div class="red">   
+		            <div class="red">
+		                <div id="clickonehundred" class="msgach">
+		                    <p>You know you can suggest a number to add by <a href="https://github.com/VaatiTheMinish/theuselessbutton.com/issues"> creating a request?</a><</a></p>
+		                </div>		                
+		                <div id="clicksixty" class="msgach">
+		                    <p>60! 40 more times till 100!</p>
+		                </div>
+		                <div id="clickfifty" class="msgach">
+		                    <p>Haven't you had enough? 50 times is a lot!</p>
+		                </div>   
 	                    <div id="clicktwintyfive" class="msgach">
                             <p> You clicked the button 25 times! </p>
-                            <p>You have reached the end for now :( want to add to the site? click here</p>
                         </div>
             
                         <div id="clickten" class="msgach">
@@ -110,16 +118,23 @@
             var button = document.getElementById("countButton");
             var display = document.getElementById("displayCount");
 
-
+            //my bad way of defining vars to elements
             var cclickone = document.getElementById("clickone");
             var cclickfive = document.getElementById("clickfive");
             var cclickten = document.getElementById("clickten");
             var cclicktwintyfive = document.getElementById("clicktwintyfive");
+            var cclickfifty = document.getElementById("clickfifty");
+            var clicksixty = document.getElementById("clicksixty");
+            var cclickonehundred = document.getElementById("clickonehundred");
 
+            //might be a better way to hide the elements
             cclickone.style.display = "none";
             cclickfive.style.display = "none";
             cclickten.style.display = "none";
             cclicktwintyfive.style.display = "none";
+            cclickfifty.style.display = "none";
+            clicksixty.style.display = "none";
+            cclickonehundred.style.display = "none";
             
             button.onclick = function(){
                 count++;
@@ -139,10 +154,17 @@
                         cclicktwintyfive.style.display = "block";
                         break;
                     case 50:
-                        // need a element in html for aclicking past 25 times
+                        cclickfifty.style.display = "block";
+                        break;
+                    case 60:
+                        clicksixty.style.display = "block";
                         break;
                     case  100:
-
+                        cclickonehundred.style.display = "block";
+                        break;
+                    case 1000:
+                        //placeholder
+                        break;
                 }
         
         
@@ -153,10 +175,8 @@
 		<footer class="footer-distributed">
 
 			<div class="footer-left">
-
 				<h3>TheUselessButton</h3>
-
-				<p class="footer-company-name"><a href="https://vaatitheminish.com" target="_blank">VaatiTheMinish</a> &copy; 2020</p>
+				<p class="footer-company-name"><a href="https://vaatitheminish.com" target="_blank">VaatiTheMinish</a> &copy; 2020 <span> | V1.2</span></p>
 			</div>
 
 			<div class="footer-center">
@@ -164,18 +184,14 @@
 
 			<div class="footer-right">
 				<div class="footer-icons">
-                    <a href="https://twitter/com/VaatiTheMinish" target="_blank"><img src="https://vaatitheminish.com/data/img/twitterlogo.png" width="60%"></a>
-                    <a href="https://youtube.com/Vaati" target="_blank"><img src="https://vaatitheminish.com/data/img/youtubelogo.png" width="60%"></a>
-                    <a href="https://twitch.tv/VaatiTheMinish123" target="_blank"><img src="https://vaatitheminish.com/data/img/twitchlogo.png" width="60%"></a>
-                    <a href="https://discord.gg/BqkFAvh" target="_blank"><img src="https://vaatitheminish.com/data/img/discordlogo.png" width="60%"></a>
-                    <a href="mailto:contact@vaati.net" target="_blank"><img src="https://vaati.net/stream/locked/email.png" width="60%"></a>
-                    <a href="https://trovo.live/vaatitheminish" target="_blank"><img src="https://static.trovo.live/cat/favicon.ico" width="60%"></a>
-
+                    			<a href="https://twitter/com/VaatiTheMinish" target="_blank"><img src="https://vaatitheminish.com/data/img/twitterlogo.png" width="60%"></a>
+                    			<a href="https://youtube.com/Vaati" target="_blank"><img src="https://vaatitheminish.com/data/img/youtubelogo.png" width="60%"></a>
+                    			<a href="https://discord.gg/BqkFAvh" target="_blank"><img src="https://vaatitheminish.com/data/img/discordlogo.png" width="60%"></a>
+                    			<a href="mailto:contact@vaati.net" target="_blank"><img src="https://vaati.net/stream/locked/email.png" width="60%"></a>
+                    			<a href="https://github.com/VaatiTheMinish/theuselessbutton.com/" target="_blank"><img src="https://github.com/fluidicon.png" width="60%"></a>
 				</div>
-
 			</div>
 
 		</footer>
-
     </body>
 </html>
