@@ -47,7 +47,7 @@
                 width: 330px;
                 border: 1px solid #4e4e4e; 
                 overflow: auto;
-                
+
             }
             .center-main {
                 text-align: center;
@@ -82,15 +82,15 @@
 			<div class="center-main">
 				<input type="button" value="Count" id="countButton" class="button"/> 
 				<p class="red">The button was pressed <span id="displayCount">0</span> times.</p>
-            
-            
+
+
 		        <div class="scrollbox">
 		            <div class="red">
-				 
+
 				<div id="clickonehundred" class="msgach">
 		                    <p>You know you can suggest a number to add by <a href="https://github.com/VaatiTheMinish/theuselessbutton.com/issues"> creating a request?</a><</a></p>
 		                </div>	
-		                <div id="cclicksixtynine" class="msgach">
+		                <div id="clicksixtynine" class="msgach">
 		                    <p>NICE!</p>
 		                </div>		                
 		                <div id="clicksixty" class="msgach">
@@ -102,15 +102,15 @@
 	                    <div id="clicktwintyfive" class="msgach">
                             <p> You clicked the button 25 times! </p>
                         </div>
-            
+
                         <div id="clickten" class="msgach">
                             <p> You clicked the button 10 times! </p>
                         </div>
-            
+
                         <div id="clickfive" class="msgach">
                             <p> You clicked the button 5 times! </p>
                         </div>
-            
+
 			<div id="clickone" class="msgach">
 				<p> You clicked the button once! </p>
 				<span onclick="this.parentElement.style.display='none'">(close)</span>
@@ -118,7 +118,7 @@
                     </div>
                 </div>
             </div>
-        
+
         <script type="text/javascript">
             var count = 0;
             var button = document.getElementById("countButton");
@@ -130,8 +130,8 @@
             var cclickten = document.getElementById("clickten");
             var cclicktwintyfive = document.getElementById("clicktwintyfive");
             var cclickfifty = document.getElementById("clickfifty");
-            var clicksixty = document.getElementById("clicksixty");
-	    var cclicksixtynine = document.getElementById("clicksixtynine");
+            var cclicksixty = document.getElementById("clicksixty");
+			var cclicksixtynine = document.getElementById("clicksixtynine");
             var cclickonehundred = document.getElementById("clickonehundred");
 
             //might be a better way to hide the elements
@@ -140,10 +140,10 @@
             cclickten.style.display = "none";
             cclicktwintyfive.style.display = "none";
             cclickfifty.style.display = "none";
-            clicksixty.style.display = "none";
-	    cclicksixtynine.style.display = "none";
+            cclicksixty.style.display = "none";
+			cclicksixtynine.style.display = "none";
             cclickonehundred.style.display = "none";
-            
+
             button.onclick = function(){
                 count++;
                 display.innerHTML = count;
@@ -177,12 +177,12 @@
                         //placeholder
                         break;
                 }
-        
-        
+
+
             }
         </script>
 	<!--	</div> -->
-		
+
 		<footer class="footer-distributed">
 
 			<div class="footer-left">
