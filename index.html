@@ -87,7 +87,10 @@
 		        <div class="scrollbox">
 		            <div class="red">
 				<div id="click1thousand" class="msgach">
-		                    <p>Please tell me why?</p>
+		                    <p>What is your goal?</p>
+		                </div>
+                <div id="click420hundred" class="msgach">
+		                    <p>420! Still dont know why you put your self through this</p>
 		                </div>
 				<div id="clickfivehundred" class="msgach">
 		                    <p>Why are you doing this to your self?</p>
@@ -137,8 +140,10 @@
             var cclickfifty = document.getElementById("clickfifty");
             var cclicksixty = document.getElementById("clicksixty");
 			var cclicksixtynine = document.getElementById("clicksixtynine");
+            var cclick420hundred = document.getElementById("click420hundred");
             var cclickonehundred = document.getElementById("clickonehundred");
-
+            var cclickfivehundred = document.getElementById("clickfivehundred");
+            var cclick1thousand = document.getElementById("click1thousand");
             //might be a better way to hide the elements
             cclickone.style.display = "none";
             cclickfive.style.display = "none";
@@ -178,8 +183,14 @@
                     case 100:
                         cclickonehundred.style.display = "block";
                         break;
+                    case 420:
+                        cclick420hundred.style.display = "block";
+                        break;
                     case 1000:
-                        //placeholder
+                        cclickfivehundred.style.display = "block";
+                        break;
+                    case 1000:
+                        cclick1thousand.style.display = "block";
                         break;
                 }
 
