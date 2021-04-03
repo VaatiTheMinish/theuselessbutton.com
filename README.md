@@ -8,3 +8,9 @@ If you would like to make changes to the main branch create a pull request.
 - Vaati
 
 Also worked on by Scally
+
+
+Todo:
+- allow spade bar to be pressed to count
+- tidy css
+- ability to save count for later
