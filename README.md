@@ -13,6 +13,7 @@ Todo:
 - ~~allow space bar to be pressed to count~~ [(Done by Galaxyy)](https://github.com/VaatiTheMinish/theuselessbutton.com/commit/cff76acfa575c7ea2e3e42250de845248c0eea31)
 - tidy css
 - ability to save count for later
+- redo footer to be nicer and responsive
 
 
 
