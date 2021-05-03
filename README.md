@@ -3,7 +3,7 @@ Source code for  [theuselessbutton.com](https://theuselessbutton.com
 ) 
 
 I like open source things so why not to release the code.
-If you would like to make changes to the main branch create a pull request.
+If you would like to make changes to the main branch, or add a message at a number where there is already a message create a pull request.
 
 - Vaati
 - Galaxyy
