@@ -1,0 +1,13 @@
+These are  the numbers that are taken, create a neww 'issue' to request a number to be added
+1
+5
+10
+25
+50
+60
+69
+91
+100
+420
+500
+1000
