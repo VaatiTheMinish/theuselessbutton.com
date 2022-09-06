@@ -1,4 +1,5 @@
 These numbers are already taken:
+0
 1
 5
 10
