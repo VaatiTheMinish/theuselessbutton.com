@@ -2,6 +2,8 @@
 Source code for  [theuselessbutton.com](https://theuselessbutton.com
 ) 
 
+I NO LONGER DO ANYTHING WITH THIS AND IT JUST SITS HERE THEREFOR IM ARCHIVING IT
+
 I like open source things so why not to release the code.
 If you would like to make changes to the main branch, or add a message at a number where there is already a message create a pull request with a number not on [this list](https://github.com/VaatiTheMinish/theuselessbutton.com/blob/main/Numbers.txt)
 
